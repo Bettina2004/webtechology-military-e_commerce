@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Account | Kalash Collection</title>
+        <link rel="stylesheet" href="../public/css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/svg+xml" href="/images/header/favicon.svg">
+    </head>
+    <body>
+        <style>
+            body {
+                background-image : url("../public/images/header/headerprod.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            
+            </style>
+        <img src="../public/images/header/headerprod.jpg" style="display: none;">
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="./a"><img src="/images/header/complogo.png" alt="comp" width="225px"></a>
+                    </div>
+                    <nav>
+                        <ul class="nav-menu">
+                            <li class="nav-item"><a href="index.html">Home</a></li>
+                            <li class="nav-item"><a href="../shopping-cart-main/shopping-cart-main/index.html">Products</a></li>
+                            <li class="nav-item"><a href="https://api.whatsapp.com/send/?phone=%2B917004822359&text&type=phone_number&app_absent=0">Contact Us</a></li>
+                            <li class="nav-item"><a href="account.html">Order here</a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html"><img class="cart" src="/images/header/cart.svg"></a>
+                    <div class="toggle"><i class="fa fa-bars"></i></div>
+                </div>
+            </div>
+        </div>
+        <h1>This is home page</h1>
+
+        <div class="container">
+            <div class="formPage">
+                <div class="btn" id="removeLog" onclick="login()">Check Status? Login</div>
+                <div class="btn" id="removeReg" onclick="register()">For Orders? Register  </div>
+                <form class= "showForm" id="loginForm" action="/login" method="POST">
+                    <h3>Login</h3>
+                    <input type="text" placeholder="Username" name="username" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <button type="submit" class="btn">Login</button>
+                    <a href="page_not_available.html">Forgot Password</a>
+                </form>
+                <form class="showForm" id="registerForm" action="/register" method="POST">
+                    <h3>Register</h3>
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="email" name="email" placeholder="E-mail (example@example.com)" required>
+                    <textarea name="message" required rows="5" cols="35" style="color: gray;border-radius: 10px;" placeholder="Enter Your query"></textarea>
+                    <input type="tel" name="number" placeholder="Enter your phone Number" pattern="[0-9]{10}" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <small>I agree to the following Terms and Conditions*</small>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+                <!-- <form class="showForm" id="registerForm" action="/register" method="POST">
+                    <h3>Register</h3>
+                    <input type="text" name="username" placeholder="Username"  required>
+                    <input type="email" name="email" placeholder="E-mail (example@example.com)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <textarea name="message"    required rows="5" cols="35" style="color: gray;border-radius: 10px;" placeholder="Enter Your query"></textarea>
+                    <input type="tel" name="number" placeholder="Enter your phone Number" pattern="[0-9]{10}" required >
+                    <input type="password" name="password" placeholder="Password" required>
+                    <small>I agree to the following Terms and Conditions*</small>
+                    <button type="submit" class="btn">Register</button>
+                </form> -->
+                <!-- <form class="showForm" id="registerForm">
+                    <h3>Register</h3>
+                    <input type="text" placeholder="Username" required>
+                    <input type="email" placeholder="E-mail (example@example.com)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <input type="password" placeholder="Password" required>
+                    <small>I agree to the following Terms and Conditions*</small>
+                    <button type="submit" class="btn">Register</button>
+                </form> -->
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <div class="container">
+                <div class="child">
+                    <div class="footerChild1">
+                        <img src="/images/header/complogo.png">
+                        <h4>Mail us at: <a href="mailto:kalashcollection@gmail.com">kalashcollection@gmail.com</a></h4>
+                    </div>
+                    <div class="footerChild2">
+                        <h3>Help</h3>
+                        <ul>
+                            <li><a href="../payment.html">Payments</a></li>
+                            <li><a href="../shipping.html">Shipping</a></li>
+                            <li><a href="../return_policy.html">Return Policy</a></li>
+                            <li><a href="../FAQ.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerChild2">
+                        <h3>Our Socials</h3>
+                        <ul>
+                            <li><a href="./page_not_available.html/" target="_blank">Instagram</a></li>
+                            <li><a href="./page_not_available.html">Facebook</a></li>
+                            <li><a href="./page_not_available.html">Twitter</a></li>
+                            <li><a href="https://api.whatsapp.com/send/?phone=%2B917004822359&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerChild2">
+                        <h3>Store Address</h3>
+                        <ul>
+                            <li><a href="https://maps.app.goo.gl/dNLPncFjbJwp2NGdA" target="_blank">Majar Road, Obra,<br>Aurangabad,<br>Bihar, India.<br>824124</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="belowfooter">
+                    &copy; Kalash Collection, 2024 <br>
+                    Amit Agrawal, All rights reserved.
+                </div>
+            </div>
+        </div>
+        <script src="/js/script.js"></script>
+        <script>
+            // Header adjustment for <768px
+const toggle = document.querySelector(".toggle");
+const menu = document.querySelector(".nav-menu");
+function toggleMenu() {
+    if (menu.classList.contains("active")) {
+        menu.classList.remove("active");
+        // add hamburger icon
+        toggle.innerHTML = `<i class="fa fa-bars"></i>`;
+    }
+    else {
+        menu.classList.add("active");
+        // add X icon
+        toggle.innerHTML = `<i class="fa fa-times"></i>`;
+    }
+}
+toggle.addEventListener("click", toggleMenu, false);
+
+// Account Page, hide and show elements when, and if required.
+var logForm = document.getElementById("loginForm");
+var regForm = document.getElementById("registerForm");
+var remLog = document.getElementById("removeLog");
+var remReg = document.getElementById("removeReg");
+
+function login() {
+    remLog.style.display = "none";
+    remReg.style.display = "block";
+    logForm.style.display = "flex";
+    regForm.style.display = "none";
+}
+
+function register() {
+    remReg.style.display = "none";
+    remLog.style.display = "block";
+    regForm.style.display = "flex";
+    logForm.style.display = "none";
+}
+
+// Preview images for the same product slider
+var prodImg = document.getElementById("prodImg");
+var smallImg = document.getElementsByClassName("small-img");
+smallImg[0].onclick = function () {
+    prodImg.src = smallImg[0].src;
+}
+smallImg[1].onclick = function () {
+    prodImg.src = smallImg[1].src;
+}
+smallImg[2].onclick = function () {
+    prodImg.src = smallImg[2].src;
+}
+smallImg[3].onclick = function () {
+    prodImg.src = smallImg[3].src;
+}
+
+        </script>
+    </body>
+</html>
